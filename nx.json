@@ -27,6 +27,9 @@
     ]
   },
   "projects": {
+    "auth": {
+      "tags": []
+    },
     "card-management": {
       "tags": []
     },
@@ -35,12 +38,6 @@
       "implicitDependencies": ["card-management"]
     },
     "core": {
-      "tags": []
-    },
-    "data": {
-      "tags": []
-    },
-    "ui": {
       "tags": []
     }
   }
