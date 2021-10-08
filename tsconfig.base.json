@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@card-managemnt/core": ["libs/core/src/index.ts"],
+      "@card-managemnt/data": ["libs/data/src/index.ts"],
+      "@card-managemnt/ui": ["libs/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

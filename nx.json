@@ -33,6 +33,15 @@
     "card-management-e2e": {
       "tags": [],
       "implicitDependencies": ["card-management"]
+    },
+    "core": {
+      "tags": []
+    },
+    "data": {
+      "tags": []
+    },
+    "ui": {
+      "tags": []
     }
   }
 }
