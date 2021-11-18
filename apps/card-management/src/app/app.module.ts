@@ -5,10 +5,11 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { ClarityModule } from '@clr/angular';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule,AppRoutingModule,RouterModule,BrowserAnimationsModule],
+  imports: [BrowserModule,AppRoutingModule,RouterModule,BrowserAnimationsModule, ClarityModule],
   providers: [],
   bootstrap: [AppComponent],
 })

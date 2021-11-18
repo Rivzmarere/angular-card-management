@@ -1,0 +1,50 @@
+<div class="clr-row">
+    <div class="clr-col-8">
+      <img alt="CMS" [src]="'assets/emma-steinhobel-4mOVK7mUZXM-unsplash.jpg'">
+    </div>
+    <div class="clr-col-4">
+    <form class="login" [formGroup]='form' autocomplete="disabled">
+      <section class="title">
+        <h3 class="welcome">Can you kindly Register Your Profile</h3>
+        Rivaldo Card Management Sytem
+      </section>
+      <div class="login-group">
+        <clr-select-container>
+          <label class="clr-sr-only">User Role</label>
+          <select formControlName="level" clrSelect  >
+            <option value="local">Local Users</option>
+            <option value="admin">Administrator</option>
+          </select>
+        </clr-select-container>
+        <clr-input-container>
+          <label class="clr-sr-only">Name</label>
+          <input type="text" formControlName="name"  clrInput placeholder="Name" />
+        </clr-input-container>
+        <clr-input-container>
+          <label class="clr-sr-only">Surname</label>
+          <input type="text" formControlName="surname"  clrInput placeholder="Surname" />
+        </clr-input-container>
+        <clr-input-container>
+          <label class="clr-sr-only">D.O.B</label>
+          <input type="date" formControlName="dateOfBirth"  clrInput placeholder="Date of Birth" />
+        </clr-input-container>
+        <clr-input-container>
+          <label class="clr-sr-only">Username</label>
+          <input type="text" formControlName="username"  clrInput placeholder="Username" />
+        </clr-input-container>
+        <clr-password-container>
+          <label class="clr-sr-only">Password</label>
+          <input type="text" clrPassword placeholder="Password" />
+        </clr-password-container>
+        <clr-password-container>
+          <label class="clr-sr-only">Confrim Password</label>
+          <input formControlName="password"  clrPassword placeholder=" Confirm Password" />
+        </clr-password-container>
+        <!-- <div class="error ">
+          Invalid user name or password
+        </div> -->
+        <button (click)="register()" class="btn btn-primary btn-block" [disabled]="form.invalid">Register</button>
+      </div>
+    </form>
+  </div>
+  </div>

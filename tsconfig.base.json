@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@card-managemnt/auth": ["libs/auth/src/index.ts"],
-      "@card-managemnt/core": ["libs/core/src/index.ts"]
+      "@card-managemnt/core": ["libs/core/src/index.ts"],
+      "@card-managemnt/dashboard": ["libs/dashboard/src/index.ts"],
+      "@card-managemnt/layouts": ["libs/layouts/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

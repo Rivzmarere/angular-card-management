@@ -1,16 +1,58 @@
-<mat-form-field appearance="fill">
-    <mat-label>Input</mat-label>
-    <input matInput>
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>Select</mat-label>
-    <mat-select>
-      <mat-option value="one">First option</mat-option>
-      <mat-option value="two">Second option</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>Textarea</mat-label>
-    <textarea matInput></textarea>
-  </mat-form-field>
-  <button mat-button color="primary">Primary</button>
+<div class="clr-row rivs">
+  <div class="clr-col-8 ">
+    <img alt="CMS" [src]="'assets/emma-steinhobel-4mOVK7mUZXM-unsplash.jpg'" />
+  </div>
+  <div class="clr-col-4 ">
+    <form class="login" [formGroup]="form">
+      <section class="title">
+        <h3 class="welcome">Welcome to</h3>
+        Rivaldo Card Management Sytem
+        <h5 class="hint">Use your Company ID to sign in or create one now</h5>
+      </section>
+      <div class="login-group">
+        <clr-select-container>
+          <label class="clr-sr-only">User Role</label>
+          <select formControlName="level" clrSelect>
+            <option value="local">Local Users</option>
+            <option value="admin">Administrator</option>
+          </select>
+        </clr-select-container>
+        <clr-input-container>
+          <label class="clr-sr-only">Username</label>
+          <input
+            type="text"
+            formControlName="username"
+            clrInput
+            placeholder="Username"
+            style="width:100%"
+          />
+        </clr-input-container>
+        <clr-password-container>
+          <label class="clr-sr-only">Password</label>
+          <input
+            type="password"
+            formControlName="password"
+            clrPassword
+            placeholder="Password"
+            style="width:100%"
+          />
+        </clr-password-container>
+        <clr-checkbox-wrapper>
+          <label>Remember me</label>
+          <input type="checkbox" clrCheckbox />
+        </clr-checkbox-wrapper>
+        <!-- <div class="error ">
+        Invalid user name or password
+      </div> -->
+        <button
+          (click)="login()"
+          class="btn btn-primary "
+          [disabled]="form.invalid"
+        >
+          Login
+        </button>
+        <a routerLink="/signup" class="signup">Sign up for a Company ID</a>
+      </div>
+    </form>
+  </div>
+</div>
